@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 20-11-21 3:41
 Use: Create get storage method write, writeIfNull, writeInMemory, read, hasData, remove, erase
 */

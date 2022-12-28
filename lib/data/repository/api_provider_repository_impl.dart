@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 20-11-21 3:41
 */
 
@@ -27,8 +27,8 @@ class ApiProviderImpl implements ApiProviderRepository {
   @override
   Future postApi(String pathUrl,
       {Map<String, dynamic>? queryParameters,
-        data,
-        Map<String, dynamic>? header}) async {
+      data,
+      Map<String, dynamic>? header}) async {
     return await _dioHelper.request('${APiKey.baseUrlKey}$pathUrl',
         data: data,
         queryParameter: queryParameters,
@@ -46,21 +46,15 @@ class ApiProviderImpl implements ApiProviderRepository {
         MapEntry<String, MultipartFile> pic = MapEntry(
             key,
             MultipartFile.fromFileSync(value.path,
-                filename: value.path
-                    .split('/')
-                    .last));
+                filename: value.path.split('/').last));
         formData.files.add(pic);
       } else if ((value) is List<File>) {
         List<MapEntry<String, MultipartFile>> files = [];
         value.forEach((element) async {
           MapEntry<String, MultipartFile> pic = MapEntry(
               key,
-              MultipartFile.fromFileSync(
-                  element.path,
-                  filename: element.path
-                      .split('/')
-                      .last
-              ));
+              MultipartFile.fromFileSync(element.path,
+                  filename: element.path.split('/').last));
           files.add(pic);
         });
         formData.files.addAll(files);

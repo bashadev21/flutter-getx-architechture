@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -82,23 +82,20 @@ class TextFieldComponent extends StatelessWidget {
                 const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
-                    color: Get.theme.primaryColor)),
-            enabledBorder:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(10.0),
-                    borderSide: const BorderSide(
-                    color: Colors.grey)),
+                borderSide: BorderSide(color: Get.theme.primaryColor)),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: const BorderSide(color: Colors.grey)),
             errorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
-                    color: Get.theme.primaryColor)),
+                borderSide: BorderSide(color: Get.theme.primaryColor)),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
-                borderSide: BorderSide(
-                    color: Get.theme.primaryColor, width: 1)),
+                borderSide:
+                    BorderSide(color: Get.theme.primaryColor, width: 1)),
             hintText: labelText,
-            hintStyle:
-                Get.textTheme.headline4!.merge(const TextStyle(fontSize: 13, color: Colors.black54)),
+            hintStyle: Get.textTheme.headline4!
+                .merge(const TextStyle(fontSize: 13, color: Colors.black54)),
             prefixIconConstraints:
                 const BoxConstraints(maxHeight: 25, maxWidth: 51),
             prefixIcon: prefixIcon == null

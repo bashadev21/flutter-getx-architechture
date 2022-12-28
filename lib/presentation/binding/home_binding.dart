@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -13,6 +13,5 @@ class HomeBinding extends Bindings {
     Get.lazyPut(() => TotalRecordController(), fenix: false);
 
     Get.lazyPut(() => PickUpController(Get.find()), fenix: false);
-
   }
 }

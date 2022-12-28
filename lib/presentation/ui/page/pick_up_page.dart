@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -32,7 +32,8 @@ class PickUpPage extends GetView<PickUpController> {
             child: Builder(builder: (context) {
               return CustomScrollView(slivers: [
                 SliverOverlapInjector(
-                    handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context)),
+                    handle: NestedScrollView.sliverOverlapAbsorberHandleFor(
+                        context)),
                 SliverList(
                     delegate: SliverChildBuilderDelegate((context, index) {
                   return Container(
@@ -47,7 +48,7 @@ class PickUpPage extends GetView<PickUpController> {
                                     const CustomerDetailItemView(
                                         dateTime: '',
                                         inquiryUniqueId: '000001',
-                                        customerName: 'Lakhani kamlesh',
+                                        customerName: 'Basha S',
                                         mobileModel: 'MI',
                                         mobileBrand: 'A2',
                                         address:
@@ -60,7 +61,7 @@ class PickUpPage extends GetView<PickUpController> {
                                         listTypeEnum: ListTypeEnum.pickUpMobile,
                                         doneOnClick: () {
                                           _pickUpDoneDialog(context,
-                                              customerName: 'Lakhani kamlesh',
+                                              customerName: 'Basha S',
                                               inquiryUniqueId: 000000001);
                                         },
                                         postponeOnClick: () {},
@@ -105,11 +106,13 @@ class PickUpPage extends GetView<PickUpController> {
               onPressed: () {
                 Get.back();
               },
-              child: Text('CANCEL', style: Get.textTheme.headline6!.copyWith(fontSize: 14))),
+              child: Text('CANCEL',
+                  style: Get.textTheme.headline6!.copyWith(fontSize: 14))),
           CupertinoDialogAction(
               isDefaultAction: true,
               onPressed: () {},
-              child: Text('YES', style: Get.textTheme.headline5!.copyWith(fontSize: 14)))
+              child: Text('YES',
+                  style: Get.textTheme.headline5!.copyWith(fontSize: 14)))
         ]));
   }
 }

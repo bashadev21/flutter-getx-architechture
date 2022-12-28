@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -8,7 +8,8 @@ import 'package:get/get.dart';
 import 'total_record_controller.dart';
 import '../../domain/repository/get_storage_repository.dart';
 
-class HomeController extends GetxController with GetSingleTickerProviderStateMixin{
+class HomeController extends GetxController
+    with GetSingleTickerProviderStateMixin {
   static HomeController get to => Get.find();
 
   //Constructor
@@ -49,6 +50,7 @@ class HomeController extends GetxController with GetSingleTickerProviderStateMix
   }
 
   selectTotalRecordGet(int index) {
-    _selectTotalRecordRx.value = TotalRecordController.to.selectTabTotalData[index];
+    _selectTotalRecordRx.value =
+        TotalRecordController.to.selectTabTotalData[index];
   }
 }

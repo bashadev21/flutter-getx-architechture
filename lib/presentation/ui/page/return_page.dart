@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -46,18 +46,18 @@ class ReturnPage extends GetView<PickUpController> {
                                     const CustomerDetailItemView(
                                         dateTime: '',
                                         inquiryUniqueId: '000001',
-                                        customerName: 'Lakhani kamlesh',
+                                        customerName: 'Basha S',
                                         mobileModel: 'MI',
                                         mobileBrand: 'A2',
-                                        address: '4th Floor/A-WING, SHASHWAT BUSINESS PARK, Rakhial Rd, opp. SOMA TEXTILE, Ahmedabad, Gujarat 380023'),
+                                        address:
+                                            '4th Floor/A-WING, SHASHWAT BUSINESS PARK, Rakhial Rd, opp. SOMA TEXTILE, Ahmedabad, Gujarat 380023'),
                                     OptionWidget(
                                         mobile: '9586331823',
                                         address: 'Address',
                                         postponeButtonText: ' Postpone ',
                                         doneButtonText: ' Done ',
                                         listTypeEnum: ListTypeEnum.returnMobile,
-                                        doneOnClick: () {
-                                         },
+                                        doneOnClick: () {},
                                         postponeOnClick: () {},
                                         cancelOnClick: () {})
                                   ]))));

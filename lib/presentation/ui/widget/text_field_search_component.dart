@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -54,62 +54,58 @@ class TextFieldSearchComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-       height: 40,
-    child: TextFormField(
-        onTap: onTap,
-        focusNode: focusNode,
-        readOnly: readOnly,
-        initialValue: initialValue,
-        keyboardType: keyboardType,
-        autovalidateMode: autoValidateMode,
-        controller: controller,
-        validator: validator,
-        onChanged: onChanged,
-        minLines: minLines,
-        maxLines: maxLines,
-        onSaved: onSaved,
-        textInputAction: textInputAction,
-        enabled: enabled,
-        obscureText: obscureText,
-        inputFormatters: maxLength == null
-            ? null
-            : [
-                LengthLimitingTextInputFormatter(maxLength),
-                if (keyboardType == TextInputType.number)
-                  FilteringTextInputFormatter.digitsOnly
-              ],
-        style: Get.textTheme.bodyText1!.copyWith(fontSize: 13),
-        decoration: InputDecoration(
-            contentPadding:
-                const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12),
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(40.0),
-                borderSide: const BorderSide(
-                    color: Colors.grey)),
-            enabledBorder:
-                OutlineInputBorder(borderRadius: BorderRadius.circular(40.0),
-                    borderSide: const BorderSide(
-                    color: Colors.grey)),
-            errorBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(40.0),
-                borderSide: const BorderSide(
-                    color: Colors.grey)),
-            focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(40.0),
-                borderSide: const BorderSide(
-                    color: Colors.grey)),
-            hintText: labelText,
-            hintStyle:
-                Get.textTheme.headline4!.merge(const TextStyle(fontSize: 13, color: Colors.grey)),
-            prefixIconConstraints:
-                const BoxConstraints(maxHeight: 25, maxWidth: 51),
-            prefixIcon: prefixIcon == null
+        height: 40,
+        child: TextFormField(
+            onTap: onTap,
+            focusNode: focusNode,
+            readOnly: readOnly,
+            initialValue: initialValue,
+            keyboardType: keyboardType,
+            autovalidateMode: autoValidateMode,
+            controller: controller,
+            validator: validator,
+            onChanged: onChanged,
+            minLines: minLines,
+            maxLines: maxLines,
+            onSaved: onSaved,
+            textInputAction: textInputAction,
+            enabled: enabled,
+            obscureText: obscureText,
+            inputFormatters: maxLength == null
                 ? null
-                : SizedBox(width: 30, child: prefixIcon),
-            suffixIcon: suffixIcon == null
-                ? null
-                : SizedBox(width: 30, child: suffixIcon),
-            suffixIconConstraints: suffixIconConstraints ??
-                const BoxConstraints(maxHeight: 16, maxWidth: 51))));
+                : [
+                    LengthLimitingTextInputFormatter(maxLength),
+                    if (keyboardType == TextInputType.number)
+                      FilteringTextInputFormatter.digitsOnly
+                  ],
+            style: Get.textTheme.bodyText1!.copyWith(fontSize: 13),
+            decoration: InputDecoration(
+                contentPadding:
+                    const EdgeInsets.symmetric(vertical: 10.0, horizontal: 12),
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                    borderSide: const BorderSide(color: Colors.grey)),
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                    borderSide: const BorderSide(color: Colors.grey)),
+                errorBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                    borderSide: const BorderSide(color: Colors.grey)),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                    borderSide: const BorderSide(color: Colors.grey)),
+                hintText: labelText,
+                hintStyle: Get.textTheme.headline4!
+                    .merge(const TextStyle(fontSize: 13, color: Colors.grey)),
+                prefixIconConstraints:
+                    const BoxConstraints(maxHeight: 25, maxWidth: 51),
+                prefixIcon: prefixIcon == null
+                    ? null
+                    : SizedBox(width: 30, child: prefixIcon),
+                suffixIcon: suffixIcon == null
+                    ? null
+                    : SizedBox(width: 30, child: suffixIcon),
+                suffixIconConstraints: suffixIconConstraints ??
+                    const BoxConstraints(maxHeight: 16, maxWidth: 51))));
   }
 }

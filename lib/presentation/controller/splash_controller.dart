@@ -1,9 +1,9 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 22-OCT-21 09:41
 
 UPDATE DETAIL
-- 04-FEB-22 11:11 (Lakhani kamlesh)
+- 04-FEB-22 11:11 (Basha S)
   Splash controller create.
 */
 

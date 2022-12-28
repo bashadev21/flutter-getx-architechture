@@ -1,5 +1,5 @@
 /*
-Developer: Lakhani kamlesh
+Developer: Basha S
 Create Date: 24-11-21 3:41
 */
 
@@ -21,7 +21,8 @@ class HistoryPage extends GetView<VisitHistoryController> {
                 style: Get.textTheme.headline4!.copyWith(color: whiteColor)),
             backgroundColor: Get.theme.primaryColor,
             leading: IconButton(
-                icon: const Icon(arrowLefAndroidIcon), onPressed: () => Get.back()),
+                icon: const Icon(arrowLefAndroidIcon),
+                onPressed: () => Get.back()),
             elevation: 0),
         body: Padding(
             padding: const EdgeInsets.all(10),
